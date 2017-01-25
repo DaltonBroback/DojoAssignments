@@ -1,0 +1,25 @@
+cd desktop
+ls
+cd DojoAssignments
+touch DojoAssingmentsRepo.txt
+git init
+git status
+git add MEAN/
+git add Python/
+git add Ruby/
+git add WebFundamentals/
+git add iOS/
+git add netCore/
+git status
+git commit -m "added all folders for first time"
+touch readme.md
+git remote add origin https://github.com/DaltonBroback/DojoAssignments
+git push origin master
+Username for 'https://github.com': DaltonBroback
+Password for 'https://DaltonBroback@github.com': 
+git add readme.md
+git status
+git commit -m "added readme"
+
+
+ 
