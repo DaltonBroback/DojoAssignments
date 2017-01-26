@@ -1,0 +1,165 @@
+/**{outline: 1px dotted red}*/
+
+#wrapper{
+  /*width: 962px;*/
+  width: 960px;
+  height: 200px;
+  position: absolute;
+  display:block;
+  background-color: #F3F5F2;
+  }
+
+p {
+  font-size: 12px;
+  padding: 7px;
+  padding-top: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+/*HEADING*/
+  #header{
+    height: 100px;
+    width: 960px;
+  }
+  #hello{
+    height: 100px;
+  }
+  h2{
+    width: 770px;
+    position: absolute;;
+    display: inline-block;
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+/*TOOLBAR*/
+  #toolbar{
+    width: 970px;
+    position: absolute;
+    display: block;
+    margin-top: 10px;
+  }
+
+  td{
+    display:inline;
+    position: relative;
+    list-style-type: none;
+    outline: 1px solid black;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right:35px;
+    margin: 0;
+    background: linear-gradient(#F3F5F2,#DEE3EA,#F3F5F2);
+    /*background-color: #DEE3EA;*/
+  }
+
+/*BODY*/
+  #space{
+    display: block;
+    width: 960px;
+    /*background-color: #4F4C6E;*/
+    margin-top: 38px;
+    background: radial-gradient(#6B5967,#4F4C6E,#1B0C11);
+  }
+  #flow{
+    height:230px;
+    width: 480px;
+    display: inline-block;
+    padding: 10px;
+    margin: 15px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background-color: #C0C0C0;
+  }
+  #upperbox{
+    height: 250px;
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    background-color: #F3FCFE;
+    }
+    h3{
+      padding: 7px;
+      margin-top:0px;
+      margin-bottom:0px;
+      /*background: linear-gradient(#BCB9BF,#868491,#BCB9BF)*/
+      background: linear-gradient(#8C8A97,#E8E7EE,#8C8A97);
+      /*background: linear-gradient(#E8E7EE,#8C8A97,#E8E7EE);*/
+    }
+  #stack{
+    height: 20px;
+    position: absolute;
+    right:27px;
+    margin-top: 3px;
+  }
+    #icon{
+      height: 20px;
+      position: absolute;
+      right:110px;
+      display:inline-block;
+    }
+    h6{
+      margin-top: 3px;
+      display:inline-block;
+      color: #4C80BE;
+    }
+  /*LOWER BODY*/
+    ul {
+      top: -15px;
+      position: relative;
+      padding:0;
+    }
+    li{
+      height:400px;
+      display:inline-block;
+      position: relative;
+      list-style-type: none;
+      outline: 1px solid black;
+      margin: 20px;
+      margin-left:15px;
+      margin-top: 30px;
+    }
+    .box{
+      width: 200px;
+      vertical-align: top;
+      background: linear-gradient(#6f85aa,#FDFDFE);
+    }
+    .boxpic{
+      height:130px;
+      width:200px;
+
+    }
+
+    .readmore{
+      height: 20px;
+      width: 80px;
+      right:10px;
+      position: absolute;
+      border-radius: 5px;
+      border: 3px solid black;
+      box-shadow: 5px 5px 25px black;
+      background-color:#5D729A;
+    }
+    .readme{
+      position: absolute;
+      top: -2px;
+      font-size: 11px;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: white;
+    }
+    #storage{
+    bottom: 10px;
+    }
+
+    #searching{
+      bottom: 10px;
+    }
+    #interaction{
+      bottom: 10px;
+    }
+    #company{
+      bottom: 10px;
+    }
