@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      My Registration Form
+    </title>
+  </head>
+  <body>
+    <h1>My Registration Form</h1>
+    <table>
+      <tbody>
+        <tr>
+          <td><label for="first_name">First Name:</label></td>
+          <td><input type="text" id="first_name" name="first_name"></td>
+        </tr>
+        <tr>
+          <td><label for="last_name">Last Name:</label></td>
+          <td><input type="text" id="last_name" name="last_name"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td><input type="text" id="email" name="email"></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+          <td><label for="password">PW Confirm</label></td>
+          <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+          <td><label for="date">Birthday</label></td>
+          <td><input type="date" id="date" name="date"></td>
+        </tr>
+      </tbody>
+    </table>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+    <p>A short description about yourself:</p>
+    <textarea cols="35" rows="4" name="description"></textarea>
+    <table>
+      <tbody>
+        <tr>
+          <td><p>Favorite Language</p></td>
+          <td>
+            <select name="Favorite Langauge">
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Dothraki">Dothraki</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <input type="submit" value="Submit">
+  </body>
+</html>

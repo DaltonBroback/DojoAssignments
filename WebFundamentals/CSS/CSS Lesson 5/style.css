@@ -1,0 +1,257 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+p{
+font-family: sans-serif;
+}
+a{
+	color:#03C0DD;
+	text-decoration: none;
+}
+
+#wrapper{
+  width: 970px;
+  margin: 0px;
+  background: linear-gradient(#E6E6E6,#FFFFFF)
+}
+
+.blue{
+  color: #26669C;
+}
+
+.red{
+  color:#D72929;
+}
+/*HEADER*/
+#header{
+  padding-top: 20px;
+  width: 970px;
+}
+  #globe{
+    height: 90px;
+    position: absolute;
+    top:0px;
+  }
+  h1{
+    width: 855px;
+    display: block;
+    font-family: sans-serif;
+    font-size: 50px;
+    padding-left: 115px;
+    top: 10px;
+    color: #474747;
+  }
+  h2{
+    width: 935px;
+    display: block;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 10px;
+    padding-left: 25px;
+    margin-top: -3px;
+    color: white;
+    background: linear-gradient(#5484AB,#67a4d3,#5484AB)
+  }
+
+/*SIDEBAR*/
+  #sidebar{
+    width:200px;
+    display: inline-block;
+  }
+  .buttontext{
+    display: block;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 3px;
+    margin-bottom: 7px;
+    box-shadow: 1px 1px 3px black;
+    color: white;
+  }
+  #button1{
+    background: linear-gradient(#5E93BD, #2E6DA1)
+  }
+  #button2{
+    background: linear-gradient(#EAA550, #EE7607)
+  }
+
+  #button3{
+    width: 140px;
+    background: linear-gradient(#76CFDE, #34C7DD,#05B7D2);
+    position:absolute;
+    top: 600px;
+    left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .greyline{
+    height: 2px;
+    width: auto;
+    display:block;
+    background-color: #C0C0C0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    }
+  #ad{
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    align-content: center;
+  }
+  h3{
+    display: inline block;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    padding-top: 20px;
+  }
+  h4{
+    display: inline block;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+  h5{
+    display: inline-block;
+    position: absolute;
+    bottom: 580px;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+    position: relative;
+    color: white;
+  }
+  #matrix{
+    }
+
+  #ninja{
+    width: 80px;
+    left: 60px;
+    top: 480px;
+    position: absolute;
+    display: inline-block;
+    align-content: center
+  }
+/*BODY*/
+  #content{
+    width: 740px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  #home{
+    width: 20px;
+    display: inline-block;
+  }
+
+  .DNS{
+    display: inline-block;
+    padding-bottom: 15px;
+  }
+  #callme{
+    width: 190px;
+    display: inline-block;
+    position: absolute;
+    left: 760px;
+
+  }
+
+  #phone{
+    width: 45px;
+    position: absolute;
+  }
+
+  .time{
+    display:block;
+    text-align: right;
+    font-size: 9px;
+
+  }
+  .number{
+    display:block;
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  h6{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #26669C;
+  }
+  li{
+    margin-left: 40px;
+    margin-right: 10px;
+  }
+  .maintext{
+    font-size: 14px;
+  }
+  ol{
+    font-family: sans-serif;
+    font-size: 14px;
+		padding-bottom: 10px;
+  }
+  #server{
+    width:250px;
+    margin-left: 245px;
+    margin-right: 245px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  /*TRIFORCEBOX*/
+    #big3{
+      background-color:white;
+      border: 6px solid #0087DD;
+      border-radius: 3px;
+      width: 700px;
+      margin:10px;
+    }
+    #triforce{
+      width: 100px;
+      margin: 10px;
+    }
+		#righttext{
+			display: inline-block;
+			width: 565px;
+			vertical-align: top;
+		  margin: 10px;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+    .boxtext{
+      display: inline-block;
+      width:560px;
+    }
+		.mainbox{
+			width: 560px;
+			display: inline-block;
+			font-size: 14px;
+		}
+    .classparty{
+      font-size: 14px;
+    }
