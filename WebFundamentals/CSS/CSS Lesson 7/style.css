@@ -1,0 +1,81 @@
+
+/**{outline: 1px dotted red}*/
+*{margin:15px}
+
+#wrapper{
+  background-color: beige;
+}
+
+#square{
+  width: 140px;
+  height: 140px;
+  background: blue;
+}
+#circle{
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  background: blue;
+}
+#triangle{
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom:140px solid blue;
+}
+
+#triangle2{
+  width: 140px;
+  height: 140px;
+  background: blue;
+  overflow:hidden;
+}
+
+#square2{
+  display:inline-block;
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  transform: translate(-115px,-45px) rotate(-64deg);
+  margin:0;
+}
+
+#square3{
+  display:inline-block;
+  width: 180px;
+  height: 180px;
+  background-color: white;
+  transform: translate(101px, -212px) rotate(64deg);
+  margin:0;
+}
+
+
+#pacman{
+  width: 0px;
+  height: 0px;
+  border-right: 70px solid transparent;
+  border-top: 70px solid blue;
+  border-left: 70px solid blue;
+  border-bottom: 70px solid blue;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+#pacman2{
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  background-color: blue;
+  overflow:hidden;
+}
+
+#square4{
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  transform: translateX(100px) rotate(45deg);
+  margin:0;
+}
