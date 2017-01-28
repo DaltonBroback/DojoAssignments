@@ -1,0 +1,140 @@
+/**{outline: 1px dotted red}*/
+
+* {
+	vertical-align: baseline;
+	font-weight: lighter;
+	font-family: courier;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	/*outline: 0;*/
+	padding: 0;
+	margin: 0;
+	}
+
+a{
+  text-decoration: none;
+  color: #3FB0AC;
+}
+.headerlink{
+  color: white;
+  text-decoration: underline;
+}
+
+img{
+  width: 55px;
+  margin-right: 0px;
+  /*background-color: #3FB0AC;*/
+}
+h1{
+  display: inline-block;
+  font-size: 30px;
+  vertical-align: top;
+  margin:10px;
+  margin-left: 0px;
+}
+
+h2{
+  display: inline-block;
+  font-size: 25px;
+  vertical-align: top;
+  margin:15px;
+  margin-left: 5px;
+  color: #DDDFD4;
+}
+h3{
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: top;
+  margin:15px;
+  margin-left: 5px;
+  color: #DDDFD4;
+}
+p{
+  font-size: 15px;
+  color:#DDDFD4;
+  margin:15px;
+  margin-top: 10px;
+}
+
+ul{
+  display: inline-block;
+  vertical-align: bottom;
+}
+li{
+  display: inline-block;
+  vertical-align: bottom;
+}
+.toolbar{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.toollist{
+  font-size: 15px;
+  margin: 0px;
+}
+
+.box1{
+  width: 166px;
+  height: 210px;
+  margin: 15px;
+  margin-top:0px;
+  background-color: #173F43;
+}
+
+.box2{
+  width: 270px;
+  height:200px;
+  margin: 15px;
+  margin-top:0px;
+  background-color: #173F43;
+}
+
+.box3{
+  margin: 15px;
+  margin-top:0px;
+  background-color: #173F43;
+}
+
+#wrapper{
+  width:970px;
+  padding:20px;
+  background-color: #DDDFD4;
+}
+#header{
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #3FB0AC;
+}
+#mainbody{
+  padding:20px;
+  margin-bottom: 20px;
+  background-color: #FAE596;
+}
+#sidebar{
+  display: inline-block;
+  vertical-align: top;
+  width: 276px;
+  height: 595px;
+  margin-right: 20px;
+  padding: 5px;
+  background-color: #173F43
+}
+#otherside{
+  display: inline-block;
+  position: relative;
+  width: 610px;
+  margin-top: 0px;
+}
+
+#footer{
+  height: 10px;
+  padding: 35px;
+  background-color: #3FB0AC
+}
+
+.bottomtext{
+  text-align: center;
+  color: black;
+  margin: 0px;
+}
