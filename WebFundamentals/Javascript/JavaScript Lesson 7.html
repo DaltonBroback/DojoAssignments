@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <script type="text/javascript">
+        "use strict";
+        var quarters;
+        function slots(quarters){
+          while (quarters > -1){
+          var result;
+          result = Math.floor(Math.random()*100);
+          if (result === 100){
+            var winnings = Math.floor(Math.random() * 50 + 51);
+            quarters += winnings;
+            return quarters;
+          }
+          else if(quarters === 0){
+            return 0
+          }
+          else{
+            quarters -= 1;
+            return quarters;
+          }
+          }
+        }
+        var goal;
+        function seekgoal(quarters,goal){
+          while(quarters < goal){
+            slots(quarters)
+          }
+          return quarters;
+        }
+      </script>
+    </head>
+  </head>
+</html>

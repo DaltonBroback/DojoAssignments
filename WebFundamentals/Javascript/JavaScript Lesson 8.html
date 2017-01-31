@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      "use strict";
+        var array = [1, "apple", -3, "orange", 0.5];
+        var newArray = [];
+        function numbersOnly(array){
+          for(var i=0; i<array.length; i++){
+              if (typeof array[i] === "number"){
+                newArray.push(array[i]);
+              }
+            }
+          console.log(newArray);
+        }
+        function numbersOnlySameArray(array){
+          for(var i=0; i<array.length; i++){
+            if(typeof array[i] !== "number"){
+              for (var x=i; x<array.length; x++){
+                array[x] = array [x+1];
+              }
+              array.pop();
+            }
+          }
+        }
+  </head>
+</html>
