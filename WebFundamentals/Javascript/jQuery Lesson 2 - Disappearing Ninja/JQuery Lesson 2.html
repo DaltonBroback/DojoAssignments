@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Disappearing Ninja Test</title>
+    <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('div').css('width','970px')
+        $('.container').css('display','inline-block')
+        $('.container').css('width','215px')
+        $('img').css('width','200px')
+        $('img').css('margin','20px')
+        $('img').click(function(){
+          $(this).hide();
+        })
+        $('button').click(function(){
+          $('img').show();
+        })
+        $('button').css('display','inline')
+        $('button').css('margin','20px')
+      })
+    </script>
+  </head>
+  <body>
+    <div id='wrappe'r>
+      <div class='container'>
+        <img src="images/Mystery-Point_48669-l.jpg">
+      </div>
+      <div class='container'>
+        <img src="images/Mystery-Point_48669-l.jpg">
+      </div>
+      <div class='container'>
+        <img src="images/Mystery-Point_48669-l.jpg">
+      </div>
+      <div class='container'>
+        <img src="images/Mystery-Point_48669-l.jpg">
+      </div>
+      <div class='container'>
+        <img src="images/Mystery-Point_48669-l.jpg">
+      </div>
+      <div class='container'>
+        <img src="images/Mystery-Point_48669-l.jpg">
+      </div>
+      <div class='container'>
+        <img src="images/Mystery-Point_48669-l.jpg">
+      </div>
+      <div class='container'>
+        <img src="images/Mystery-Point_48669-l.jpg">
+      </div>
+      <button id='restore'>Restore</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#riddler').css('display','block')
+        $('h1').css('text-align','center')
+        $('h1').css('margin-bottom','5px')
+        $('p').css('display','inline-block')
+        $('p').css('margin-left','20px')
+        // $('p .kungfu').css('display','inline')
+        $('button').css('display','inline-block')
+        $('button').css('margin-left','20px')
+        $('#class').click(function(){
+          $('#makered').addClass('red');
+          })
+        $('#riddler').hide('#riddler');
+        $('#slidetoggle').click(function(){
+          $('img').slideToggle('img');
+          })
+        $('#append').click(function(){
+          $('#addto').append("<p> I believe you will find the dessert to be both engrossing and high-grossing! So we don't get dessert? You go buy a tape recorder and record yourself for a whole day. I think you'll be surprised at some of your phrasing. Waiting for the Emmys. BTW did you know won 6 Emmys and was still canceled early by Fox? COME ON. I was set up. By the Brits. A group of British builders operating outside the O.C. You want to have some guy reach around you in the middle of the night, start messing with your junk? I'll sacrifice anything for my children. </p>");
+        });
+        $('#showme').hide('#showme');
+        $('#hide').click(function(){
+          $('#showme').hide('#showme')
+        });
+        $('#show').click(function(){
+          $('#showme').show('#showme')
+        });
+        // $('#toggle').click(function(){
+        //   $('#toggleme').toggle('#toggleme')
+        // });
+        $('#slidedown').click(function(){
+          $('#slidemedown').slideDown('#slidemedown')
+        });
+        $('#slideup').click(function(){
+          $('#slidemedown').slideUp('#slidemedown')
+        })
+        $('#slidemedown').hide('#slidemedown');
+        $('#fadeout').click(function(){
+          $('#fademe').fadeOut('#fademe')
+        })
+        $('#fadein').click(function(){
+          $('#fademe').fadeIn('#fademe')
+        })
+        $('#Before').click(function(){
+          $('#changeable').before("<p>You did it!</p>")
+        })
+        $('#After').click(function(){
+          $('#changeable').after("<p>You did it!</p>")
+        })
+        $('#Hello').click(function(){
+          $('#changeme').html("<b>Click</b> the button to change <i>this</i> text.")
+        })
+        $('#textchange').click(function(){
+          $('#changethistext').text("You did it!")
+        })
+        $('#attribute').click(function(){
+          $('#linktochange').attr("href","http://www.bing.com")
+        })
+        $('input:text').css("width","300px")
+        $('#input').click(function(){
+          $('input:text').val("You've met with a terrible fate, haven't you?")
+        })
+        $('#databutton').click(function(){
+          $('p').data('color','orange')
+        })
+        $('#toggle').click(function(){
+          $('#toggleme').css("color","red")
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <h1>Show/Hide</h1>
+    <button id='show'>Show</button>
+    <button id='hide'>Hide</button>
+    <p>Click the buttons to hide/show text</p>
+    <div id="showme">
+    <p class="kungfu">I know kung fu.</p>
+    <p class="kungfu">Show me.</p>
+    </div>
+    <hr>
+
+    <h1>Slide</h1>
+    <button id='slidedown'>SlideDown</button>
+    <button id='slideup'>SlideUp</button>
+    <p>Click here to slide down or up</p>
+    <p id='slidemedown'>Whoooosh!</p>
+    <hr>
+
+    <h1>Toggle</h1>
+    <button id='toggle'>Toggle</button>
+    <p id='toggleme'>Click here to toggle between colors for this text</p>
+    <hr>
+
+    <h1>AddClass</h1>
+    <button id='class'>AddClass</button>
+    <p id="makered">Click the button to add class 'red' to this paragraph</p>
+    <hr>
+
+    <h1>Fade</h1>
+    <button id='fadeout'>FadeOut</button>
+    <button id='fadein'>FadeIn</button>
+    <p id="fademe">Click to fade this text in and out</p>
+    <hr>
+
+
+    <h1>Append</h1>
+    <button id='append'>Append</button>
+    <p id="addto">Click the button to append a new paragraph!</p>
+    <hr>
+
+    <h1>Before/After</h1>
+    <button id='Before'>Before</button>
+    <button id='After'>After</button>
+    <p id="changeable">Click the button to add more text</p>
+    <hr>
+
+    <h1>Text</h1>
+    <button id='textchange'>Text</button>
+    <p id="changethistext">Click the button to change this text.</p>
+    <hr>
+
+    <h1>HTML</h1>
+    <button id='Hello'>HTML</button>
+    <p id='changeme'>Click the button to change this text.</p>
+    <hr>
+
+    <h1>Attr</h1>
+    <p><a id='linktochange' href="http://www.google.com">Click here to go to Google!</a></p>
+    <button id='attribute'>Click here to change the link's href attribute</button>
+    <hr>
+
+    <h1>Value</h1>
+    <button id='input'>Click here to make words</button>
+    <input type="text"></input>
+    <hr>
+
+    <h1>Slidetoggle</h1>
+    <button id='slidetoggle'>Slidetoggle</button>
+    <p>Click the button to slidetoggle a hidden image</p>
+    <img id="riddler" src="images/Mystery-Point_48669-l.jpg" alt="riddler">
+    <hr>
+
+    <h1>Data</h1>
+    <button id='databutton'>Data</button>
+    <p id='datatest'>Test</p>
+    <hr>
+
+    <!-- <h1></h1>
+    <button id=''></button>
+    <p></p>
+    <hr> -->
+  </body>
+</html>
