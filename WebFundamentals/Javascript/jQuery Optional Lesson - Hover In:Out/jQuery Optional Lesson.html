@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>You've Met With a Terrible Fate, Haven't You?</title>
+    <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('div').css('width','970px')
+        $('img').css('width','350px')
+        $('img').css('height','450px')
+        $('img').css('margin','20px')
+        $('img').hover(function(){
+          var alt = $(this).attr('data-alt-src');
+          var temp = $(this).attr('src');
+          $(this).attr('src',alt);
+          $(this).attr('data-alt-src',temp);
+        },
+          function(){
+          var alt = $(this).attr('data-alt-src');
+          var temp = $(this).attr('src');
+          $(this).attr('src',alt);
+          $(this).attr('data-alt-src',temp);
+          }
+        )
+      })
+    </script>
+  </head>
+  <body>
+    <div>
+    <img src="images/MasksLink.png" data-alt-src="images/DekuLink.jpg">
+    <img src="images/MasksLink.png" data-alt-src="images/GoronLink.png">
+    <img src="images/MasksLink.png" data-alt-src="images/ZoraLink.png">
+    <img src="images/MasksLink.png" data-alt-src="images/FierceDeityLink.png">
+    </div>
+</html>
