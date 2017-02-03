@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+    <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('th').css("margin","25px");
+        $('table').css({"border-color":"black",
+                        "border-width":"1px",
+                        "border-style":"solid",
+                        "width": "400px"});
+        $('form').css('width','300px');
+        $('input').css('margin','5px');
+        $('#formbody').children().css('display','block');
+        $('form').submit(function(){
+          var fname= $('#firstname').val();
+          var lname = $('#lastname').val();
+          var email = $('#emailad').val();
+          var contact = $('#contactno').val();
+          console.log(fname);
+          $('.fname').append(fname);
+          $('.fname').attr("class","used")
+          $('.lname').append(lname);
+          $('.lname').attr("class","used");
+          $('.email').append(email);
+          $('.email').attr("class","used")
+          $('.contact').append(contact);
+          $('.contact').attr("class","used")
+          $('tbody').append('<tr><td class="fname"></td><td class="lname"></td><td class="email"></td><td class="contact"></td></tr>');
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email Address</th>
+          <th>Contact#</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fname"></td>
+          <td class="lname"></td>
+          <td class="email"></td>
+          <td class="contact"></td>
+        </tr>
+      </tbody>
+    </table>
+    <form>
+      <div id=formtitle>
+        <h1>Add User</h1>
+        <hr>
+      </div>
+      <div id=formbody>
+        First Name: <input type="text" id="firstname">
+        Last Name: <input type="text"id="lastname">
+        Email Address: <input type="text" id="emailad">
+        Contact No.: <input type="text" id="contactno">
+        <input type="submit" value="Add User"></input>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="utf-8">
+    <title>The Codingdojo contacts page</title>
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        function clickflip(){
+          if($(this).children('h1').is(':visible')){
+            $(this).children('h1').hide();
+          }
+          else {
+            $(this).children('h1').show();
+          }
+          if($(this).children('.clicktoshow').is(':visible')){
+            $(this).children('.clicktoshow').hide();
+          }
+          else {
+            $(this).children('.clicktoshow').show();
+          }
+          if($(this).children('.description').is(':visible')){
+            $(this).children('.description').hide();
+          }
+          else{
+            $(this).children('.description').show();
+          }
+        };
+        $('form').css({ "vertical-align":"top",
+                        "width":"300px",
+                        "display":"inline-block"})
+        $('form').children().css({"margin":"10px",
+                                'display':"inline-block"});
+        $('#cardcontainer').css({"width":"300px",
+                                "display":"inline-block",
+                              })
+        $(document).on('click','#submit', function(){
+          var firstname = $('#firstname').val();
+          var lastname = $('#lastname').val();
+          var description = $('#description').val();
+          $(".card").children(".fullname").append(firstname+" "+lastname);
+          $(".card").children(".description").append(description);
+          $(".description").hide();
+          $(".card").children(".clicktoshow").append("Click for Description!");
+          $(".card").children('h1').css("text-align","center");
+          $(".card").children('p').css("text-align","center");
+          $(".card").css({"width":"250px",
+                          "height":"90px",
+                          "padding": "20px",
+                          "outline": "1px solid black",
+                          "margin": "5px"});
+          $(".card").click(clickflip);
+          $(".card").attr("class","used");
+          $("#cardcontainer").append("<div class='card'><h1 class='fullname'></h1><p class='clicktoshow'></p><p class='description'></p></div>");
+          return false;
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <p> First Name: <input type="text" id="firstname"></p>
+      <p> Last Name: <input type="text" id="lastname"></p>
+      <p> Description:</p> <textarea cols="35" rows="4" id="description"></textarea>
+      <input type="submit" value="Add User" id="submit">
+    </form>
+    <div id="cardcontainer">
+      <div class="card">
+        <h1 class="fullname"></h1>
+        <p class="clicktoshow"></p>
+        <p class="description"></p>
+      </div>
+    </div>
+  </body>
+</html>
