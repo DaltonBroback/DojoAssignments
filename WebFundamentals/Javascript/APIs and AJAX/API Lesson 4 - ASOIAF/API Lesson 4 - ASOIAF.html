@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>An API of Ice and Fire</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('img').click(function(){
+        var id = $(this).attr("id");
+        var url = 'https://anapioficeandfire.com/api/houses/'+id;
+        $.get(url, function(res){
+          console.log(res)
+          var html_str = "";
+          var founder;
+          html_str += "<p><b>Name: </b>"+res.name+"</p>";
+          html_str += "<p><b>Words: </b>"+res.words+"</p>";
+          html_str += "<p><b>Region: </b>"+res.region+"</p>";
+          html_str += "<p><b>Titles: </b>"+res.titles[0];
+          for(var i=1; i<res.titles.length; i++){
+            html_str += ", "+res.titles[i]
+          }
+          html_str += ".</p>";
+          html_str += "<p><b>Seats: </b>"+res.seats+"</p>";
+          html_str += "<p><b>Founded: </b>"+res.founded+"</p>";
+          $("#deets").html(html_str);
+          $.get(res.founder, function(res){
+            console.log(res);
+            founder = res.name;
+            $('#deets').append("<p><b>Founder: </b>"+founder+"</p>")
+          $('p').css("color","#7c4403")
+          $('p').css("margin-left","10px")
+          })
+        }, "json");
+      })
+    });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>A Song of Ice and Fire</h1>
+
+      <div id="houses">
+        <img id="16" src="images/baratheon.png">
+        <img id="229" src="images/lannister.jpg">
+        <img id="362" src="images/stark.jpg">
+        <img id="378" src="images/targaryen.jpg">
+      </div>
+      <div id="details">
+        <h3>House Details</h3>
+        <p id="deets"></p>
+      </div>
+    </div>
+  </body>
+</html>

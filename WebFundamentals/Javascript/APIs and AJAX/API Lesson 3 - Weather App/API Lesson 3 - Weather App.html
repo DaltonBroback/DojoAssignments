@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $('form').submit(function() {
+          var location = $("#textinput").val();
+          var url = "http://api.openweathermap.org/data/2.5/weather?q="+location+",us&&appid=de9a9f7d8aa86c4f14de683653ea0ed0";
+          console.log(url);
+          $.get(url, function(res) {
+            console.log(res);
+            var html_str = "";
+            html_str += "<h1>"+res.name+"</h1>";
+            html_str += "<p>Temperature: "+res.main.temp+"<p>";
+            $('#stats').html(html_str);
+          }, 'json');
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <input id="textinput" type="text">
+      <input type="submit" value="Search Weather">
+      <div id="stats"></div>
+    </form>
+  </body>
+</html>

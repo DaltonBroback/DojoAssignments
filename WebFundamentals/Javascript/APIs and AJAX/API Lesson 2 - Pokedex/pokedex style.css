@@ -1,0 +1,29 @@
+/**{outline: 1px dotted red};*/
+
+img{
+  display: auto;
+}
+
+
+#pokemon{
+  width: 70%;
+  display: inline-block;
+  position: relative;
+}
+
+#pokedex{
+  width: 300px;
+  height: 700px;
+  position: fixed;
+  display: block;
+  padding: 10px;
+  float: right;
+  background-color: red;
+  display: inline-block;
+}
+
+#poketext{
+  height: 630px;
+  background-color: white;
+  padding: 15px;
+}

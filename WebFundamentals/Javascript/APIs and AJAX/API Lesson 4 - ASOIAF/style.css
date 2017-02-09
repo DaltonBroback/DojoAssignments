@@ -1,0 +1,36 @@
+/**{outline: 1px dotted red }*/
+
+img{
+  width: 350px;
+  height: 200px;
+  display:inline-block;
+  margin:20px;
+}
+
+h1{
+  text-align: center;
+  color: #7c4403;
+}
+
+h3{
+  color: #7c4403;
+  margin-left: 20px;
+}
+
+#container{
+  width: 800px;
+  background-color: #F6E6C2;
+}
+
+#houses{
+  margin:auto;
+}
+
+#details{
+  height: 400px;
+  width: 400px;
+  margin:auto;
+  background-color: #E2D1A1;
+  border: 2px solid #7c4403;
+
+}
