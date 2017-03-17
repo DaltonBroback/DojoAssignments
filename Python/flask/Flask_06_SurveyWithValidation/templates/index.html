@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dojo Survey Index</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div id="body">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+            <p id="errors">{{message}}</p>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+      <form action="/submit" method="post">
+        <p>Your Name:</p> <input class="inputs" type='text' name='name'>
+        <p>Dojo Location:</p> <select class="inputs" name='location'>
+          <option value="San Jose">San Jose</option>
+          <option value="Seattle">Seattle</option>
+        </select>
+        <p>Favorite Language:</p> <select class="inputs" name='language'>
+          <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+          <option value="Klingon">Klingon</option>
+        </select>
+        <p>Comment (optional):</p>
+          <textarea name='comment'></textarea>
+        <button type='submit' value='submit'>Button</button>
+      </form>
+    </div>
+  </body>
+</html>

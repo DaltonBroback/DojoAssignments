@@ -1,0 +1,45 @@
+/**{outline: 1px dotted red}*/
+
+.records{
+  float: right;
+  display: block;
+  width: 200px;
+}
+
+.inputs{
+  float: right;
+  display: block;
+  margin-top: -34px;
+  width: 200px;
+}
+form{
+  width: 380px;
+  height: 240px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid black;
+  padding: 10px;
+}
+
+#thankyou{
+  width: 380px;
+  background-color: #b6d7a8;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid black;
+  padding: 10px;
+}
+
+textarea{
+  display: block;
+  width: 370px;
+  height: 50px;
+  resize: none;
+}
+
+.button{
+ margin-top: 10px;
+ float: right;
+}

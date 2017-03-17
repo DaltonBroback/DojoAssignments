@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/page.css' %}" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class=container>
+      <div class="box"><p class="titlebox">The current time and date:</p></div>
+      <div class="box">
+        <!-- <div class="line"><h1>{{date}}</h1></div>
+        <div class="line"><h1>{{time}}</h1></div> -->
+        <div class="titlebox timetext"><h1><span class="text html basic"><span>{{date}}</span></span></h1>
+        <h1><span class="text html basic"><span>{{time}}</span></span></h1></div>
+      </div>
+    </div>
+  </body>
+</html>

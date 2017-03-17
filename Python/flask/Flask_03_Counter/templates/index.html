@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Counter</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Counter</h1>
+    <p>{{session['count']}} time(s)</p>
+    <form action="/plustwo">
+      <button type="submit">+2</button>
+    </form>
+    <form action="/reset">
+      <button type="submit">Reset</button>
+    </form>
+    </hgroup>
+  </body>
+</html>

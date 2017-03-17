@@ -1,0 +1,84 @@
+/**{outline: 1px dotted red}*/
+
+#header{
+  border: 2px solid black;
+}
+
+.fixpls{
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.account{
+  display: inline-block;
+  float: right;
+  margin: 35px;
+}
+
+#container{
+  padding: 80px;
+}
+
+input{
+  width: auto;
+  height: auto;
+  outline: none;
+}
+
+textarea{
+  display: block;
+  width: 97%;
+  border: 1px solid black;
+}
+
+#messagetext{
+  height: 75px;
+}
+
+.commenttext{
+  height: 50px;
+}
+
+.comment{
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+h3{
+  margin-bottom: 5px;
+}
+
+button{
+  float: right;
+  margin: 20px;
+  display: block;
+}
+
+
+.message{
+  margin-top: 50px;
+}
+
+.postedmessage{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.loginform{
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  padding: 25px;
+  padding-top: 5px;
+}
+
+.logintext{
+  float: right;
+}
+
+#red{
+  background-color: red;
+  color: white;
+  padding: 5px;
+}

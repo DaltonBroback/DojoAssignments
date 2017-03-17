@@ -1,0 +1,28 @@
+/**{
+  outline: 1px dotted red;
+}*/
+
+.container{
+  display: inline;
+}
+
+.titlebox{
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  left: 40%;
+  right: 40%;
+  outline: 2px solid black
+}
+.timetext{
+  padding: 20px 70px;
+}
+.box{
+  display: block;
+  text-align: center;
+  margin: 20px;
+}
+
+h1{
+  margin: 0px;
+}

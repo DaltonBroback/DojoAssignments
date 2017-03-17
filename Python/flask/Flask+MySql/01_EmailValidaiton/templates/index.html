@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div id='container'>
+      <div id="message">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+            {% autoescape off %}
+              <p class="errors">{{message}}</p>
+            {% endautoescape %}
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+      </div>
+      <form id="emailform" action="/getemail" method="post">
+        Email Address: <input id="email" type="text" name="email">
+        <input type='submit' value='Submit'>
+      </form>
+    </div>
+  </body>
+</html>

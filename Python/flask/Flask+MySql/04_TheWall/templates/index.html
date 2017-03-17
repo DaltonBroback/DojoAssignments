@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coding Dojo Wall</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+      <div id = "header">
+        <h1 class = "fixpls">Coding Dojo Wall</h1>
+        <!-- <p class = "account"><a action="/logoff"> log off</a></p> -->
+        <p class = "account"><a href="/logoff"> log off</a></p>
+        <p class = "account">Hello {{session.user['first_name']}}</p>
+      </div>
+      <div id = "container">
+      <form action='/message' method="post">
+        <h2>Post a Message</h2>
+        <textarea  id="messagetext" name="messagetext"></textarea>
+        <button type="/submit">Post a Message</button>
+      </form>
+      <div class = "message">
+        {% autoescape off %}
+          {{session.allmessages}}
+        {% endautoescape %}
+      </div>
+    </div>
+  </body>
+</html>

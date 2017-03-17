@@ -1,0 +1,37 @@
+1) SELECT * FROM languages
+WHERE language = "slovene";
+
+2)SELECT countries.name, COUNT(cities.id) as num_cities FROM countries
+JOIN cities ON countries.id = cities.country_id
+GROUP BY countries.id
+ORDER by num_cities DESC;
+
+3) SELECT * FROM cities
+WHERE country_code = "MEX" AND population > 500000
+ORDER by population DESC;
+
+4)SELECT * from languages
+WHERE percentage > 89 
+ORDER BY country_code, percentage  DESC;
+
+OR, depending on what you’re looking for
+
+SELECT * from languages
+WHERE percentage > 89 
+ORDER BY percentage  DESC;
+
+5)SELECT * FROM countries
+WHERE surface_area < 501 AND population > 100000;
+
+6)SELECT * FROM countries
+WHERE government_form = "Constitutional Monarchy" AND capital > 200 AND life_expectancy > 75;
+
+7)SELECT countries.name, cities.name, cities.district, cities.population
+FROM countries
+	JOIN cities ON countries.id = cities.country_id
+WHERE countries.name = 'Argentina' AND cities.district = 'Buenos Aires' AND cities.population > 500000;
+
+8)SELECT countries.region, COUNT(countries.id) AS num_countries
+FROM countries
+GROUP BY countries.region
+ORDER BY num_countries DESC;

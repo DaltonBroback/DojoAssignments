@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ninja Money</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'first_app/css/style.css' %}">
+  </head>
+  <body>
+    <div id="container">
+      <div id="goldcounter">
+        <p class="yourgold">Your Gold:</p>
+        <div id="numbox">{{request.session.gold}}</div>
+      </div>
+      <form action="/process_money" method="post">
+        {% csrf_token %}
+        <h2>Farm</h2>
+        <p>(earns 10-20 gold)</p>
+        <input type="hidden" name="building" value="farm" />
+        <input class="button" type="submit" value="Find Gold!"/>
+      </form>
+      <form action="/process_money" method="post">
+        {% csrf_token %}
+        <h2>Cave</h2>
+        <p>(earns 5-10 gold)</p>
+        <input type="hidden" name="building" value="cave" />
+        <input class="button" type="submit" value="Find Gold!">
+      </form>
+      <form action="/process_money" method="post">
+        {% csrf_token %}
+        <h2>House</h2>
+        <p>(earns 2-5 gold)</p>
+        <input type="hidden" name="building" value="house" />
+        <input class="button" type="submit" value="Find Gold!">
+      </form>
+      <form action="/process_money" method="post">
+        {% csrf_token %}
+        <h2>Casino</h2>
+        <p>(earns/takes 0-50 gold)</p>
+        <input type="hidden" name="building" value="casino" />
+        <input class="button" type="submit" value="Find Gold!">
+      </form>
+      <div id="activities">
+        <p class="yourgold">Activities:</p>
+        <div id="resultscollected">
+          {% autoescape off %}
+            {{request.session.result}}
+          {% endautoescape %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

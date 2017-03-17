@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coding Dojo Wall</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+      <div id = "header">
+        <h1 class = "fixpls">Coding Dojo Wall</h1>
+      </div>
+      <div id = "container">
+      <form class = "loginform" action="/createaccount" method="post">
+        <h2>Register</h2>
+        <p>First Name: <input class="logintext" type="textarea" name="first_name"></p>
+        <p>Last Name: <input class="logintext" type="textarea" name="last_name"></p>
+        <p>Email: <input class="logintext" type="textarea" name="email"></p>
+        <p>Password: <input class="logintext" type="textarea" name="password"></p>
+        <a href="/"> Go back</a>
+        <button type="submit"/>Register</button>
+      </form>
+    </div>
+  </body>
+</html>

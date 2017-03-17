@@ -1,0 +1,26 @@
+form{
+  width:300px;
+  /*outline: 1px solid black;*/
+}
+
+input{
+  vertical-align: top;
+  display: inline;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+p{
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.errors{
+  display: block;
+  background-color: red;
+  color: white;
+}

@@ -1,0 +1,31 @@
+*{outline: 1px dotted red}
+#container{
+  background: yellow;
+}
+#header{
+  position: fixed;
+  display: inline;
+  padding: 20px;
+  padding-top: 0px;
+  margin-top: 0px;
+  border-bottom: 2px solid black;
+  width: 100%;
+  /*background-color: green;*/
+}
+
+#fixpls{
+  display: inline-block;
+  background-color: blue;
+  position: relative;
+  margin-right: 0px;
+  color: purple;
+}
+
+.account{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+form{
+  margin-top: 200px;
+}

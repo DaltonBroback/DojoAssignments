@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dojo Survey Index</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div id="body">
+      <form action="/">
+        <h4>Submitted Information</h4>
+        <p>Name: <span class="records">{{session['name']}}</span></p>
+        <p>Dojo Location: <span class="records">{{session['location']}}</span></p>
+        <p>Favorite Language: <span class="records">{{session['language']}}</span></p>
+        <p>Comment (optional): <span class="records">{{session['comment']}}</span></p>
+        <button class="button" type="submit">Go Back</button>
+      </form>
+    </div>
+  </body>
+</html>

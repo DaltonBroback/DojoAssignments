@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div id='container'>
+      <div id="message">
+        <p id='green'>The email address you entered ({{session['email']}}) is a VALID email address! Thank you!</p>
+      </div>
+      <form id="backform" action="/goback">
+        <input type='submit' value='Go Back'>
+      </form>
+      <h3>Email Addresses Entered</h3>
+      <!-- {{ all_emails }} -->
+      {% for email in all_emails %}
+        <!-- <form action="/remove_email/<email_id>", method="post"> -->
+          <p><b>Email Address:</b> {{email['email'] }} <b>Date Added:</b> {{email['created_at']}}</p>
+          <!-- <input type='submit' value='Remove Email'> -->
+        </form>
+      {% endfor %}
+    </div>
+  </body>
+</html>
