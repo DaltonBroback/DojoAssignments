@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eyes Like Yours - Proof of Concept</title>
+    <style type="text/css">
+      body{
+      background-color: black;
+      }
+
+      p{
+        font-size: 21px;
+        font-family: sans-serif;
+        line-height: 30px;
+        color: white;
+      }
+
+      #charactername{
+        margin-top: 0px;
+        font-weight: bold
+      }
+
+      #dialogue{
+        margin-left: 10px;
+      }
+      #gamearea{
+        /*width: 750px;
+        height: 1334px;*/
+        width: 375px;
+        height: 667px;
+        /*background-color: blue;*/
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+      }
+
+      #narrationeffect{
+        background-color: black;
+        height: 667px;
+        width: 290px;
+        opacity: 0.75;
+        padding: 40px;
+        padding-right: 50px;
+        visibility: hidden;
+        position: absolute;
+      }
+
+      #textbox{
+        background: linear-gradient(black, grey);
+        position: absolute;
+        vertical-align: bottom;
+        padding-top: 10px;
+        padding: 20px;
+        padding-right: 30px;
+        bottom: 0;
+        opacity: 0.7;
+        height: 180px;
+        width: 325px;
+        visibility: hidden;
+      }
+
+      #character{
+        height: 667px;
+        position: static;
+        vertical-align: bottom;
+        bottom: 0;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="gamearea">
+      <div id="narrationeffect">
+        <p id="narration"> </p>
+      </div>
+      <div id="textbox">
+        <p id="charactername"></p>
+        <p id="dialogue"></p>
+        </div>
+      <div id='character'></div>
+    </div>
+    <script>
+
+    function playSound(url){
+      var audio = document.createElement('audio');
+      audio.style.display = "none";
+      audio.src = url;
+      audio.autoplay = true;
+      audio.onended = function(){
+        audio.remove() //Remove when played.
+      };
+      document.body.appendChild(audio);
+    }
+
+    // var themeatiyah = new Audio('theme-atiyah.mp3');
+
+    function displaybackground(bg){
+      document.getElementById("gamearea").style.backgroundImage = "url('"+bg+"')";
+    }
+    function hidebackground(){
+      document.getElementById("gamearea").style.backgroundImage = "";
+    }
+    function displaycharacter(sprite){
+      document.getElementById("character").style.backgroundImage = "url('"+sprite+"')";
+    }
+    function narration(text){
+      document.getElementById("narration").innerHTML = text
+    }
+    function dialogue(character,text){
+      document.getElementById("charactername").innerHTML = character
+      document.getElementById("dialogue").innerHTML = text
+    }
+    function displaynarration(){
+      hidetextbox();
+      document.getElementById("narrationeffect").style.visibility = "visible";
+      document.getElementById("narration").style.visibility = "visible";
+    }
+    function hidenarration(){
+      document.getElementById("narration").style.visibility = "hidden";
+      document.getElementById("narrationeffect").style.visibility = "hidden";
+    }
+    function displaytextbox(){
+      hidenarration();
+      document.getElementById("dialogue").style.visibility = "visible";
+      document.getElementById("charactername").style.visibility = "visible";
+      document.getElementById("textbox").style.visibility = "visible";
+    }
+    function hidetextbox(){
+      document.getElementById("dialogue").style.visibility = "hidden";
+      document.getElementById("charactername").style.visibility = "hidden";
+      document.getElementById("textbox").style.visibility = "hidden";
+    }
+
+    narration("Press Space Bar to Play")
+    displaynarration();
+    var idx = 1
+    document.onkeydown = function(a){
+      if (a.keyCode == 32){
+        switch(idx){
+          case 1:
+            dialogue("Demi","Sorry. There was traffic.");
+            displaybackground('images/bg-lecturehall.jpg');
+            displaytextbox();
+            playSound('sounds/V01.mp3');
+            break;
+          case 2:
+            dialogue("Teacher","That's alright, just take your seat.");
+            displaytextbox();
+            playSound('sounds/V02.mp3');
+            break;
+          case 3:
+            narration("I plunk down on the nearest empty desk I can find. Beside me sits a young looking girl, her hair braided really intricately. She's wearing four or five of those “energy talismans” around her neck. Great. Just the sort of person I want to sit next to in a stupid mythology class, of all things. As if being forced to take this waste of time of a subject isn't irritating enough. Well, hopefully she'll keep to herself, and everything will be sunshine and smiles.");
+            playSound('sounds/V03.mp3');
+            displaynarration();
+            break;
+          case 4:
+            hidenarration();
+            displaycharacter('images/Atiyah1.png');
+            playSound('sounds/theme-atiyah.mp3');
+            break;
+          case 5:
+            dialogue("Atiyah","Hi! Nice to meet you. I'm Atiyah!");
+            displaytextbox();
+            playSound('sounds/V04.mp3');
+            break;
+          case 6:
+            narration("I really need to stop being so optimistic.");
+            displaynarration();
+            playSound('sounds/V05.mp3');
+            break;
+          case 7:
+            dialogue("Teacher","Adrian Andrews?");
+            displaytextbox();
+            playSound('sounds/V06.mp3');
+            break;
+          case 8:
+            narration("The professor's doing roll call. I take out my book and sit back, listening for my name.");
+            displaynarration();
+            playSound('sounds/V07.mp3');
+            break;
+          case 9:
+            dialogue("Atiyah","It's my first day here!");
+            displaytextbox();
+            playSound('sounds/V08.mp3');
+            break;
+          case 10:
+            dialogue("Atiyah","Actually, I'm still in high school, but my grades were good enough that they're letting me take a couple college classes early!");
+            playSound('sounds/V09.mp3');
+            break;
+          case 11:
+            dialogue("Atiyah","Of course I just had to take a mythology class. Mythological creatures are so fascinating, don't you think?");
+            playSound('sounds/V10.mp3');
+            break;
+          case 12:
+            narration("I really, really hope she's not talking to me.");
+            displaynarration();
+            playSound('sounds/V11.mp3');
+            break;
+          case 13:
+            dialogue("Atiyah","Do you like my talismans? I just got them from some nice people selling them out on the quad.");
+            displaytextbox();
+            playSound('sounds/V12.mp3');
+            break;
+          case 14:
+            narration("She is, isn't she? Maybe if I ignore her, she'll take a hint.");
+            displaynarration();
+            playSound('sounds/V13.mp3');
+            break;
+          case 15:
+            dialogue("Teacher","Atiyah Basilah?");
+            displaytextbox();
+            playSound('sounds/V14.mp3');
+            break;
+          case 16:
+            dialogue("Atiyah","Present! Anyway, as I was saying...");
+            playSound('sounds/V15.mp3');
+            break;
+          case 17:
+            narration("No such luck...");
+            displaynarration();
+            playSound('sounds/V16.mp3');
+            break;
+          case 18:
+            dialogue("Atiyah","They said that these help with aligning your energies.");
+            displaytextbox();
+            playSound('sounds/V17.mp3');
+            break;
+          case 19:
+            dialogue("Atiyah","So I got five! One for each of the elements, and one more because they came at a discount if I got five.");
+            displaytextbox();
+            playSound('sounds/V17-2.mp3');
+            break;
+          case 20:
+            narration("I can't help myself. I say something");
+            displaynarration();
+            playSound('sounds/V18.mp3');
+            break;
+          case 21:
+            dialogue("Demi","You do know that there's more than four elements, right?");
+            displaytextbox();
+            playSound('sounds/V19.mp3');
+            break;
+          case 22:
+            narration("It's Over!");
+            displaynarration();
+            hidebackground();
+            displaycharacter();
+            break;
+      }
+        idx++;
+      }
+    }
+
+    </script>
+  </body>
+</html>
