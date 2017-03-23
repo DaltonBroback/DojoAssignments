@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'first_app/css/style.css' %}">
+    </head>
+  <body>
+    <div id='container'>
+      <div id="message">
+        {% if messages %}
+          {% for message in messages %}
+            {% autoescape off %}
+              <p class="errors">{{message}}</p>
+            {% endautoescape %}
+          {% endfor %}
+        {% endif %}
+      </div>
+      <form id="emailform" action="/getemail" method="post">
+        Email Address: <input id="email" type="text" name="email">
+        <input type='submit' value='Submit'>
+      </form>
+    </div>
+  </body>
+</html>
