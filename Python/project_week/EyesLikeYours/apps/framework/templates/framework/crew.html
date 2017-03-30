@@ -32,6 +32,11 @@
             <h2>Cris Hylton</h2> <p>Head Artist</p><p>-</p>
           </div>
         </div>
+        <div class="textbox thin cast">
+          {% autoescape off %}
+            {{cast.text}}
+          {% endautoescape %}
+        </div>
       {% endblock %}
     </div>
   </body>

@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.template import context
-from .models import Episode, Character, Announcement
+from .models import Episode, Character, Announcement, Content
 
 def index(request):
     context = {
@@ -14,7 +14,10 @@ def old(request):
     }
     return render(request, 'framework/old.html',context)
 def about(request):
-    return render(request, 'framework/about.html')
+    context = {
+        "about":Content.objects.get(title = "about")
+    }
+    return render(request, 'framework/about.html',context)
 def episodes(request):
     # request.session['link'] = ""
     # request.session['title'] = ""
@@ -42,7 +45,10 @@ def getcharacter(request, name):
     return render(request, 'framework/getcharacter.html', context)
     # return redirect('/characters')
 def crew(request):
-    return render(request, 'framework/crew.html')
+    context = {
+        "cast":Content.objects.get(title = "cast")
+    }
+    return render(request, 'framework/crew.html',context)
 def test(request):
     context = {
         "episodes":Episode.objects.all(),
