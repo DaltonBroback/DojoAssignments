@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% block title %}
+        The Official Hub for Eyes Like Your
+      {% endblock %}
+    </title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'framework/css/style.css' %}">
+  </head>
+  <body>
+    <div id = "wrapper">
+      {% block header%}
+        <div id="header">
+          <a href = "/"><img src="/static/framework/images/ely_logo.png"></a>
+          <p><a href = "/about">About</a></p>
+          <p><a href = "/episodes">Episodes</a></p>
+          <p><a href = "/characters">Characters</a></p>
+          <p><a href = "/crew">Cast/Crew</a></p>
+          <!-- <p><a href = "/creatures">Creatures</a></p> -->
+          <!-- <p><a href = "/extras">Extras</a></p> -->
+          <!-- <p><a href = "/fanworks">Fanworks</a></p> -->
+          <!-- <p><a href = "/support">Support Us</a></p> -->
+        </div>
+      {% endblock %}
+      <!-- <div id="content"> -->
+        {% block content %}
+        {% endblock %}
+      <!-- </div> -->
+    </div>
+  </body>
+</html>

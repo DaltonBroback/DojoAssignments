@@ -1,0 +1,43 @@
+{% extends "framework/base.html" %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Characters{% endblock %}</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'framework/css/style.css' %}">
+  </head>
+  <body>
+    <div id = "wrapper">
+      {% block content %}
+        <div class="container">
+          <a href="characters/demi"><img class="personbox profile" src="../static/framework/images/icon_demi.png"></a>
+          <a href="characters/atiyah"><img class="personbox profile" src="../static/framework/images/icon_atiyah.png"></a>
+          <a href="characters/jayden"><img class="personbox profile" src="../static/framework/images/icon_jayden.png"></a>
+          <a href="characters/stokes"><img class="personbox profile" src="../static/framework/images/icon_stokes.png"></a>
+          <!-- <div class="textbox button">
+            <h2>Other Characters</h2>
+          </div> -->
+        </div>
+      {% endblock %}
+    </div>
+  </body>
+</html>
+
+<!-- Characters:
+Main:
+  Demi
+  Atiyah
+  Jayden
+  Stokes
+Second Tier(?):
+  Mikael
+  Basir
+  Wahid
+  Ithnanie
+Third Tier:
+  Thalata
+  Arebah
+  Hemsah
+  Sitta
+  Seba -->

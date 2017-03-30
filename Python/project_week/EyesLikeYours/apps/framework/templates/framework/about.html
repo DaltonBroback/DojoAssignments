@@ -1,0 +1,28 @@
+{% extends "framework/base.html" %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'framework/css/style.css' %}">
+  </head>
+  <body>
+    <div id = "wrapper">
+      {% block content %}
+        <div class="textbox wide">
+          <p>Eyes Like Yours is an original urban fantasy audio drama. It stars 24 year old Demi Diaz who is just trying to get through financial difficulties and an uncertain future by working full time  and putting herself through college. She’s pretty jaded and closed off because of her hard life, until she meets bubbly, excitable 15 year old Atiyah Basilah and discovers her family secrets. Now Demi finds herself bound to a flesh-eating monster (in the form of an attractive young man), and desperate to stop the world from being overrun by “Otherfolk”; mythological monsters from the ancient world. All while still trying to get a degree and make rent.</p>
+
+          <p> The cast is filled with colorful characters, including; a soft spoken but mysterious half-human half-Otherfolk, an exuberant scientist with a zest for life and discovery but a total disregard for the rules, a ruthless Otherfolk slayer, and more! </p>
+
+          <p>The characters are also uniquely diverse; racially, economically, and politically. The two leading characters are a Latin/Hispanic and an Arabic girl. I guarantee every episode passes the Bechdal test.</p>
+
+
+          <p>Also Jayden and Mikael are REALLY PRETTY GUYS. So there’s that, too.</p>
+
+          <p>Well… most of the time.</p>
+        </div>
+      {% endblock %}
+    </div>
+  </body>
+</html>

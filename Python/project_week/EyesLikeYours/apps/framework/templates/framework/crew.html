@@ -1,0 +1,56 @@
+{% extends "framework/base.html" %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Cast/Crew{% endblock %}</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'framework/css/style.css' %}">
+  </head>
+  <body>
+    <div id = "wrapper">
+      {% block content %}
+          <div class="personbox profile lucia">
+            <img src="../static/framework/images/profile_lucia.jpg">
+            <h2>Lucia Lobosvilla:</h2> <p>Creator</p><p>Showrunner</p>
+        </div>
+        <div class = "container">
+          <div class="personbox profile">
+            <img src="../static/framework/images/profile_matt.jpg">
+            <h2>Matt Di Carlo</h2> <p>Story Editor</p><p>Writer</p>
+          </div>
+          <div class="personbox profile">
+            <img src="../static/framework/images/profile_dalton.jpg">
+            <h2>Dalton Broback</h2> <p>Audio Mixer</p><p>Writer</p>
+          </div>
+          <div class="personbox profile">
+            <img src="../static/framework/images/profile_nick.jpg">
+            <h2>Nick Eriksen</h2> <p>Audio Mixer</p><p>-</p>
+          </div>
+          <div class="personbox profile">
+            <img src="../static/framework/images/profile_cris.png">
+            <h2>Cris Hylton</h2> <p>Head Artist</p><p>-</p>
+          </div>
+        </div>
+      {% endblock %}
+    </div>
+  </body>
+</html>
+
+<!-- Characters:
+Main:
+  Demi
+  Atiyah
+  Jayden
+  Stokes
+Second Tier(?):
+  Mikael
+  Basir
+  Wahid
+  Ithnanie
+Third Tier:
+  Thalata
+  Arebah
+  Hemsah
+  Sitta
+  Seba -->

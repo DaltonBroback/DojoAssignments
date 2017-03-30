@@ -1,0 +1,44 @@
+{% extends "framework/base.html" %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Episode List{% endblock %}</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'framework/css/style.css' %}">
+  </head>
+  <body>
+    <div id = "wrapper">
+      {% block content %}
+      <div id = "columns">
+          <div class="column">
+            <div class="textbox thin sixeightyseven">
+                <h1> Episodes</h1>
+                <ol>
+                <li><p><a href = "episodes/get/1">What Rich People Keep In The Basement</a></p></li>
+                <li><p><a href = "episodes/get/2">The Cosmic Displacement of Demeter Diaz</a></p></li>
+                <li><p><a href = "episodes/get/3">The Explanatory Exposition Episode</a></p></li>
+                <li><p><a href = "episodes/get/4">The Monster of Sceana Park Part I</a></p></li>
+                <li><p><a href = "episodes/get/5">The Monster of Sceana Park Part II</a></p></li>
+                <li><p><a href = "episodes/get/6">What Dreams May... RUN!</a></p></li>
+                <li><p>The Better Half <em>(Coming Soon)</em></p></li>
+                <li><p>Made Whole <em>(Coming Soon)</em></p></li>
+                <li><p>Moves Like Atiyah<em>(Coming Soon)</em></p></li>
+                <li><p><em>(Coming Soon)</em></p></li>
+                <li><p><em>(Coming Soon)</em></p></li>
+                <li><p><em>(Coming Soon)</em></p></li>
+                <li><p><em>(Coming Soon)</em></p></li>
+                </ol>
+              </div>
+            </div>
+          <div class="column">
+          {% autoescape off %}
+            {{request.session.link}}
+            {{request.session.info}}
+          {% endautoescape %}
+          </div>
+        </div>
+      {% endblock %}
+      </div>
+  </body>
+</html>

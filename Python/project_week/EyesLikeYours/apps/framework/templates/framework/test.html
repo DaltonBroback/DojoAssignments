@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% for episode in episodes %}
+      <p>ID: {episode.id}
+      Title: {episode.title}</p>
+    {% endfor %}
+    {% for character in characters %}
+      <p>ID: {character.id}
+      Name: {character.name}</p>
+    {% endfor %}
+  </body>
+</html>
