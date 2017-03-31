@@ -31,6 +31,16 @@ h2{
   max-width: 530px;
   margin-bottom: 20px;
 }
+h3{
+  font-size: 40px;
+  max-width: 530px;
+  margin-bottom: 20px;
+	position: absolute;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 p{
   font-weight: lighter;
   margin-bottom: 15px;
@@ -84,8 +94,16 @@ em{
   margin-bottom: 20px;
   overflow: hidden;
 }
+
 img{
   width: inherit;
+}
+
+.textbox img{
+	width: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .textbox{
   width: 90%;

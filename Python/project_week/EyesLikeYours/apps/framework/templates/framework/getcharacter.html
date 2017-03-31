@@ -11,7 +11,7 @@
     <div id = "wrapper">
       {% block content %}
         <div class="container characterbios">
-          <img class="personbox bio" src="/static/framework/images/{{character.image}}">
+          <a href="/characters"><img class="personbox bio" src="/static/framework/images/{{character.image}}"></a>
           <div class="personbox bio">
             {% autoescape off %}
               <p>Name: {{character.name}}</p>
