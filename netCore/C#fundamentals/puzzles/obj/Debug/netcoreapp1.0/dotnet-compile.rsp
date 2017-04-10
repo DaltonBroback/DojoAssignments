@@ -1,5 +1,5 @@
---temp-output:/Users/dalton/Desktop/DojoAssignments/netCore/puzzles/obj/Debug/netcoreapp1.0/
---out:/Users/dalton/Desktop/DojoAssignments/netCore/puzzles/bin/Debug/netcoreapp1.0/puzzles.dll
+--temp-output:/Users/dalton/Desktop/DojoAssignments/netCore/C#fundamentals/puzzles/obj/Debug/netcoreapp1.0/
+--out:/Users/dalton/Desktop/DojoAssignments/netCore/C#fundamentals/puzzles/bin/Debug/netcoreapp1.0/puzzles.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -87,4 +87,4 @@
 --reference:/Users/dalton/.nuget/packages/System.Threading.Timer/4.0.1/ref/netstandard1.2/System.Threading.Timer.dll
 --reference:/Users/dalton/.nuget/packages/System.Xml.ReaderWriter/4.0.11/ref/netstandard1.3/System.Xml.ReaderWriter.dll
 --reference:/Users/dalton/.nuget/packages/System.Xml.XDocument/4.0.11/ref/netstandard1.3/System.Xml.XDocument.dll
-/Users/dalton/Desktop/DojoAssignments/netCore/puzzles/Program.cs
+/Users/dalton/Desktop/DojoAssignments/netCore/C#fundamentals/puzzles/Program.cs

@@ -32,14 +32,9 @@ namespace ConsoleApplication
         public static string TossCoin(Random rnd){
             Console.WriteLine("Tossing a Coin!");
             // Random rnd = new Random();
-            int marker = rnd.Next(0,2);
-            Console.WriteLine(marker);
-            string result = "";
-            if(marker == 0){
+            string result = "Tails";
+            if(rnd.Next(0,2) == 0){
                 result = "Heads";
-            }
-            else{
-                result = "Tails";
             }
             Console.WriteLine(result);
             return result;
