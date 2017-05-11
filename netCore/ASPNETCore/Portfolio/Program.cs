@@ -9,10 +9,7 @@ namespace ConsoleApplication
 {
     public class Program
     {
-        public void Configure(IApplicationBuilder app)
-        {
-            app.UseStaticFiles();
-        }
+
     public static void Main(string[] args)
         {
             IWebHost host = new WebHostBuilder()

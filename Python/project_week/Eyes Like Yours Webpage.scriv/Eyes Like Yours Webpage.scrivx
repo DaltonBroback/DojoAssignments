@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="MacBook-Pro-3" Modified="2017-04-05 15:55:46 -0700" ModID="F4C8A589-3FE1-469F-8F06-C60D79EFAA04">
+<ScrivenerProject Version="1.5" Creator="SCRMAC-2.8.1.2-26324" Device="MacBook-Pro-3" Modified="2017-05-02 12:01:21 -0700" ModID="5318EEC6-CCF4-4151-B527-755159B46B5D">
     <Binder>
         <BinderItem ID="0" UUID="0C5ACFEB-3AC5-43C7-A985-6EE097C6499C" Type="DraftFolder" Created="2017-03-27 12:43:18 -0700" Modified="2017-03-27 12:43:18 -0700">
             <Title>Draft</Title>
@@ -64,7 +64,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2017-03-27 12:43:17 -0700" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="0" Characters="0" Date="2017-04-05 15:55:41 -0700"></PreviousSession>
+        <PreviousSession Words="0" Characters="0" Date="2017-05-02 12:01:18 -0700"></PreviousSession>
     </ProjectTargets>
     <PrintSettings PaperSize="612.0,792.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>

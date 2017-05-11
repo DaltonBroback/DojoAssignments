@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the first step in iOS development?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ss5-ce-PiR">
+                                <rect key="frame" x="20" y="30" width="728" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCw-DO-dmU">
+                                <rect key="frame" x="20" y="59" width="51" height="30"/>
+                                <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KoE-Y8-8xB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6s-OP-wWv">
+                                <rect key="frame" x="15" y="501.5" width="738" height="21"/>
+                                <string key="text">Create the user interface. As we create the UI, we will get a better understanding of our application. Then we breathe life into our application.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5a-wB-M2u">
+                                <rect key="frame" x="716" y="59" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PfO-Ml-OOQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rCw-DO-dmU" firstAttribute="top" secondItem="ss5-ce-PiR" secondAttribute="bottom" constant="8" symbolic="YES" id="1eu-fw-UfJ"/>
+                            <constraint firstItem="U5a-wB-M2u" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2Zb-iU-ZBy"/>
+                            <constraint firstItem="ss5-ce-PiR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="35g-wp-YOX"/>
+                            <constraint firstItem="y6s-OP-wWv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7oJ-wo-eFd"/>
+                            <constraint firstItem="y6s-OP-wWv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9dy-81-Iya"/>
+                            <constraint firstItem="U5a-wB-M2u" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="C9q-nO-NCd"/>
+                            <constraint firstItem="rCw-DO-dmU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CrK-UM-myg"/>
+                            <constraint firstItem="ss5-ce-PiR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="MN2-gF-lPh"/>
+                            <constraint firstItem="U5a-wB-M2u" firstAttribute="top" secondItem="ss5-ce-PiR" secondAttribute="bottom" constant="8" symbolic="YES" id="SUk-X7-j3a"/>
+                            <constraint firstItem="ss5-ce-PiR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Zjt-97-KbX"/>
+                            <constraint firstItem="y6s-OP-wWv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="dSC-cu-dvE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ss5-ce-PiR" secondAttribute="trailing" id="doc-h7-zNJ"/>
+                            <constraint firstAttribute="trailing" secondItem="y6s-OP-wWv" secondAttribute="trailing" constant="15" id="hoI-oy-DKI"/>
+                            <constraint firstItem="U5a-wB-M2u" firstAttribute="baseline" secondItem="rCw-DO-dmU" secondAttribute="baseline" id="wPk-1O-wvO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="y6s-OP-wWv" id="dCA-jj-gx6"/>
+                        <outlet property="questionLabel" destination="ss5-ce-PiR" id="zBr-M8-9qo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="82.758620689655174"/>
+        </scene>
+    </scenes>
+</document>
