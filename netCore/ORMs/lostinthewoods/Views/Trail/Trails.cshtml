@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        @{
+            foreach(var trail in ViewBag.trail)
+                {
+                    <h1>@trail.Name</h1>
+                    <h3>Description</h3>
+                        <p>@trail.Description</p>
+                    <h3>Trail Length</h3>
+                        <p>@trail.Length Miles</p>
+                    <h3>Elevation Change</h3>
+                        <p>@trail.ElevationChange feet</p>
+                    <p>Longitude - @trail.Longitude º @trail.NorS</p>
+                    <p>Latitude - @trail.Latitude º @trail.EorW</p>
+                }
+            }
+    </body>
+</html>

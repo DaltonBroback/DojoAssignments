@@ -1,0 +1,26 @@
+<html>
+    <head>
+       <title>Users</title> 
+    </head>
+    <body>
+        <div id = "header">
+        <a href="professional_profile">My Profile</a>
+        <a href="logout">Logout</a>
+        </div>
+        <p>Users you may want to connect with</p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+        @{
+            foreach(var user in @ViewBag.NoRelationship)
+            {
+            <tr>
+                <td><a href="users/@user.id">@user.firstname @user.lastname</a></td>
+                <td><a href="adduser/@user.id">Connect</a></td>
+            </tr>}
+        }
+        </table>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "dojodachi",
+  "private": true,
+  "dependencies": {
+        "Microsoft.AspNetCore.Session": "1.0.0" 
+  }
+}

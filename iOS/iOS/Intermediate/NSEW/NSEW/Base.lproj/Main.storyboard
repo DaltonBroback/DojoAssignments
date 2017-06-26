@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NSEW" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXX-Pc-fu4">
+                                <rect key="frame" x="167" y="20" width="40" height="30"/>
+                                <state key="normal" title="North"/>
+                                <connections>
+                                    <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8je-Xo-3oc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yp-Qp-fj0">
+                                <rect key="frame" x="337" y="318.5" width="30" height="30"/>
+                                <state key="normal" title="East"/>
+                                <connections>
+                                    <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7l-3P-Qpt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ne6-F9-s79">
+                                <rect key="frame" x="167" y="629" width="41" height="30"/>
+                                <state key="normal" title="South"/>
+                                <connections>
+                                    <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYG-OV-C6L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvy-gt-yb4">
+                                <rect key="frame" x="8" y="318" width="35" height="30"/>
+                                <state key="normal" title="West"/>
+                                <connections>
+                                    <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9M9-g2-S10"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Yp-Qp-fj0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="72X-1D-aUD"/>
+                            <constraint firstItem="dvy-gt-yb4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Hgg-gh-b0J"/>
+                            <constraint firstItem="qXX-Pc-fu4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Nhu-lq-ryT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ne6-F9-s79" secondAttribute="bottom" constant="8" id="TN3-4y-v8W"/>
+                            <constraint firstItem="qXX-Pc-fu4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UkA-9C-Ska"/>
+                            <constraint firstAttribute="trailing" secondItem="3Yp-Qp-fj0" secondAttribute="trailing" constant="8" id="del-z9-402"/>
+                            <constraint firstItem="dvy-gt-yb4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fcF-dm-dkB"/>
+                            <constraint firstItem="Ne6-F9-s79" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pPZ-Bb-XVs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="Wri-Yk-msu" kind="presentation" identifier="DirectionSegue" id="c9T-KE-RJH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1365.5999999999999" y="78.710644677661179"/>
+        </scene>
+        <!--Direction View Controller-->
+        <scene sceneID="qYK-jm-swB">
+            <objects>
+                <viewController id="Wri-Yk-msu" customClass="DirectionViewController" customModule="NSEW" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MdB-Nl-a5T"/>
+                        <viewControllerLayoutGuide type="bottom" id="R3M-w1-BxU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M2x-co-gBr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Amz-kk-wQK">
+                                <rect key="frame" x="128" y="309" width="119" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Direction"/>
+                                <connections>
+                                    <segue destination="Gte-D9-ZWo" kind="unwind" unwindAction="goBack:" id="ksg-3F-Zup"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Amz-kk-wQK" firstAttribute="centerX" secondItem="M2x-co-gBr" secondAttribute="centerX" id="C7i-Ji-W1n"/>
+                            <constraint firstItem="Amz-kk-wQK" firstAttribute="centerY" secondItem="M2x-co-gBr" secondAttribute="centerY" id="qxN-dh-fDj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="directionLabel" destination="Amz-kk-wQK" id="o86-U6-BhC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xyB-X5-uQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Gte-D9-ZWo" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2188" y="79"/>
+        </scene>
+    </scenes>
+</document>

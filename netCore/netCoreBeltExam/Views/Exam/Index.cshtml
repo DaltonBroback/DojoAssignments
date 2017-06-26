@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Success</title>
+    </head>
+    <body>
+    <div id = "header">
+        <a href="users">All Users</a>
+        <a href="logout">Logout</a>
+    </div>
+    <h1>Hi @{@ViewBag.user.firstname}!</h1>
+    <p> Here is your profile description:</p>
+    @{@ViewBag.user.description}
+    <h2>Your Professional Network</h2>
+    @{
+        foreach(var user in ViewBag.friends1)
+        {
+            <p><a href="users/@user.id">@user.firstname @user.lastname</a></p>
+        }
+        
+        foreach(var user in ViewBag.friends2)
+        {
+            <p><a href="users/@user.id">@user.firstname @user.lastname</a></p>
+        }
+    }
+
+    <h2>Invitations</h2>
+    <p>The following people have asked you to be part of their network</p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Action</th>
+            <th></th>
+        </tr>
+        @{
+            foreach(var user in ViewBag.requests)
+            {<tr>
+                <td><a href="users/@user.id">@user.firstname @user.lastname</a></td>
+                <td><a href="accept/@user.id">Accept Invite</a></td>
+                <td><a href="ignore/@user.id">Ignore</a></td>
+            </tr>}
+        }
+    </table>
+    </body>
+</html>

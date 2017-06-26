@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login and Registration</title>
+    </head>
+    <body>
+        <div>
+            @{
+                foreach(var error in ViewBag.Errors)
+                {
+                    if(@error.Errors.Count > 0)
+                    {
+                        <p>@error.Errors[0].ErrorMessage</p>
+                    }
+                }
+            }
+        </div>
+        <h1>Register</h1>
+        <form action="/register" method="post">
+           <label for="firstname">First Name</label>
+           <input type="text" name="firstname"><br>
+           <label for="lastname">Last Name</label>
+           <input type="text" name="lastname"><br>
+           <label for="email">Email</label>
+           <input type="text" name="email"><br>
+           <label for="password">Password</label>
+           <input type="password" name="password"><br>
+           <label for="passwordcon">Confirm Password</label>
+           <input type="password" name="passwordcon"><br>
+           <button type="submit">Register</button>
+        </form><br><br>
+        <h1>Login</h1>
+        <form action="login" method="post">
+           <label for="email">Email</label>
+           <input type="text" name="email"><br>
+           <label for="password">Password</label>
+           <input type="password" name="password"><br>
+           <button type="submit">Login</button>
+        </form>
+    </body>
+</html>
